@@ -1,0 +1,99 @@
+.container {
+  padding: 24px;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.logo {
+  margin-top: 30px;
+  width: 50vw;
+}
+
+.buttoncontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -4px;
+  margin-top: 10px;
+}
+
+.buttoncontainer button:hover {
+  cursor: pointer;
+}
+
+.buttoncontainer button:focus {
+  cursor: pointer;
+  outline: var(--outline-color);
+  outline-offset: 8px;
+}
+
+.header a:focus {
+  outline: var(--outline-color);
+  outline-offset: 16px;
+}
+
+.footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 1.25em;
+  color: var(--footer-color);
+  font-weight: 300;
+  padding-bottom: 32px;
+  letter-spacing: var(--letter-spacing);
+}
+
+.footer a {
+  transition: all 0.2s ease-in-out;
+  padding: 5px 8px 5px 8px;
+}
+
+.footer a:hover {
+  color: red;
+}
+
+.footer a:focus {
+  color: var(--footer-focus-color);
+  outline: none;
+  border-radius: 4px;
+  border: var(--header-focus-outline);
+  background-color: var(--header-focus);
+}
+
+.themeSwitcher {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  color: var(--icon-color);
+  margin-left: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 720px) {
+  .logo {
+    width: 80vw;
+  }
+
+  .footer {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .footer {
+    margin-top: 30px;
+    font-size: 0.8em;
+  }
+}

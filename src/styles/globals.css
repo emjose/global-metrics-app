@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+@import url("https://use.typekit.net/iin8ndc.css");
+
+:root {
+  --text-color: #363636;
+
+  --icon-color: #aa93a0;
+
+  --country-overview-color: #f71c70af;
+
+  --arrow-color: black;
+
+  --background-color: #fff9f9;
+
+  --search-bar-color: #f3ecf0d7;
+
+  --row-background: white;
+
+  --font-family: neue-haas-unica, sans-serif;
+
+  --box-shadow: 2px 2px 8px 2px rgba(219, 208, 214, 0.322);
+
+  --letter-spacing: 0.5px;
+
+  --header-color: #f71c70af;
+
+  --header-focus: #ffb3c962;
+
+  --header-focus-outline: 2px solid #fa8baaa8;
+
+  --header-hover: #ffb3c93b;
+
+  --outline-color: 2px solid #f71c70af;
+
+  --row-border: 0.25px solid #eee4e9d7;
+
+  --country-color: #3d3d3d;
+
+  --pag-color: rgb(107, 107, 107);
+
+  --pag-font-weight: 300;
+
+  --page-hover-focus-weight: 300;
+
+  --search-border: 0.1px solid #ebdce4d7;
+
+  --country-font-weight: 500;
+
+  --country-hover-focus-weight: 500;
+
+  --input-color: black;
+
+  --placeholder-color: #aa93a0;
+
+  --search-font-weight: 400;
+
+  --header-invert-color: black;
+
+  --overview-font-weight: 600;
+
+  --details-line-color: 1.5px solid #f3e0f1;
+
+  --footer-color: #c0abb7;
+
+  --hover-font-color: rgb(143, 45, 156);
+
+  --footer-focus-color: black;
+
+  /* --arrow-color: #e02ed7; */
+  /* --hover-font-weight: 300; */
+  /* --details-font-weight: 500; */
+}
+
+[data-theme="dark"] {
+  --placeholder-color: #827786;
+
+  --text-color: #f0f0f0;
+
+  --icon-color: #827786;
+
+  --arrow-color: white;
+
+  --background-color: #19142c;
+
+  --search-bar-color: #342a42;
+
+  --row-background: #352b42;
+
+  --outline-color: 2px solid #fc7e18d7;
+
+  --search-border: 0.1px solid #3b3344;
+
+  --header-focus: #fd7a2ee8;
+
+  --header-hover: #4c415c;
+
+  --header-focus-outline: 0px solid #be2f03d7;
+
+  --header-color: #d199e2d7;
+
+  --box-shadow: none;
+
+  --row-border: 0px solid #4d4d4d00;
+
+  --country-color: #ffffffd5;
+
+  --pag-color: #ffffffd5;
+
+  --pag-font-weight: 200;
+
+  --page-hover-focus-weight: 300;
+
+  --letter-spacing: 0.75px;
+
+  --country-font-weight: 300;
+
+  --country-hover-focus-weight: 500;
+
+  --input-color: #ffffffe3;
+
+  --search-font-weight: 300;
+
+  --header-invert-color: white;
+
+  --country-overview-color: #d199e2d7;
+
+  --overview-font-weight: 400;
+
+  --details-line-color: 1.5px solid #5b4c64;
+
+  --footer-color: #d199e2d7;
+
+  --hover-font-color: rgb(143, 45, 156);
+
+  --footer-focus-color: white;
+
+  /* --hover-font-weight: 400; */
+  /* --details-font-weight: 500; */
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  color: inherit;
+  font: inherit;
+}
+
+.logo {
+  width: 1000px;
+}
+
+/* font-family: ff-scala-sans-pro, sans-serif;
+font-weight: 300;
+font-style: normal;
+
+font-family: ff-scala-sans-pro, sans-serif;
+font-weight: 300;
+font-style: italic;
+
+font-family: ff-scala-sans-pro, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: ff-scala-sans-pro, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+font-family: ff-scala-sans-pro, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+font-family: ff-scala-sans-pro, sans-serif;
+font-weight: 700;
+font-style: italic;
+
+font-family: ff-scala-sans-pro, sans-serif;
+font-weight: 900;
+font-style: normal;
+
+font-family: ff-scala-sans-pro, sans-serif;
+font-weight: 900;
+font-style: italic;
+
+font-family: flegrei, sans-serif;
+font-weight: 400;
+font-style: normal; */
+
+/* Neue Haas Unica W1G Black
+
+font-family: neue-haas-unica, sans-serif;
+font-weight: 800;
+font-style: normal;
+
+
+Neue Haas Unica W1G Bold
+
+font-family: neue-haas-unica, sans-serif;
+font-weight: 600;
+font-style: normal;
+
+
+Neue Haas Unica W1G ExtraBlack
+
+font-family: neue-haas-unica, sans-serif;
+font-weight: 900;
+font-style: normal;
+
+
+Neue Haas Unica W1G Heavy
+
+font-family: neue-haas-unica, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+
+Neue Haas Unica W1G Light
+
+font-family: neue-haas-unica, sans-serif;
+font-weight: 300;
+font-style: normal;
+
+
+Neue Haas Unica W1G Medium
+
+font-family: neue-haas-unica, sans-serif;
+font-weight: 500;
+font-style: normal;
+
+
+Neue Haas Unica W1G Regular
+
+font-family: neue-haas-unica, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+
+Neue Haas Unica W1G Thin
+
+font-family: neue-haas-unica, sans-serif;
+font-weight: 200;
+font-style: normal;
+
+
+Neue Haas Unica W1G UltraLight
+
+font-family: neue-haas-unica, sans-serif;
+font-weight: 100;
+font-style: normal; */
