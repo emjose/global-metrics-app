@@ -76,8 +76,9 @@ npm run dev
 <a href="https://global-metrics-app.vercel.app/">![Live Site](Assets/inter-live-site.png)</a>
 
 <a href="https://global-metrics-app.vercel.app/">![Live Site](Assets/029-global-1.gif)</a>
+
 • <a href="https://css-tricks.com/having-a-little-fun-with-custom-focus-styles/">Custom focus styling</a> has been applied to nearly all elements for accessibility, and countries can be sorted by name, population, area, and <a href="https://www.investopedia.com/terms/g/gini-index.asp">Gini Index</a>.
-<br>
+
 • The Global Metrics app is responsive and has light and dark modes.
 <br>
 <br>
