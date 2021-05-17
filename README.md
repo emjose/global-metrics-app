@@ -14,7 +14,7 @@
 
 <br>
 
-<a href="vercel URL">![Global Metrics](Assets/preview-029-global-metrics.png)</a> 
+<a href="https://global-metrics-app.vercel.app/">![Global Metrics](Assets/preview-029-global-metrics.png)</a> 
 
 #
 
@@ -34,12 +34,12 @@
 
 <a href=#100days>![#100DaysOfCode](Assets/inter-100hash.png)</a>  
 
-### Day 29: May 2021
-- text
+### Day 29: May 18, 2021
+- I worked on a great <a href="https://youtu.be/v8o9iJU5hEA">Next.js tutorial</a> by <a href="https://www.youtube.com/channel/UCmSmLukBF--YrKZ2g4akYAQ">Thu Nghiem</a> that uses the <a href="https://restcountries.eu/">REST Countries API</a>.
   
-- text
+- Countries of the world can be sorted by data, and the app is responsive with light and dark modes.
   
-- text
+- This app also gave me a better understanding of accessibility and the importance of focus state styling for keyboard-only navigation.
 
 #
 
@@ -54,13 +54,17 @@ git clone git@github.com:emjose/global-metrics-app.git && cd global-metrics-app
 #### Install dependencies:
 ```bash
 yarn install
+
 # or
+
 npm install
 ```
 #### Run the development server:
 ```bash
 yarn dev
+
 # or
+
 npm run dev
 ```
 #### Open [http://localhost:3000](http://localhost:3000) with your browser to launch the Global Metrics app.
@@ -69,9 +73,16 @@ npm run dev
 
 <p id="live-site"><p>
 
-<a href="vercel URL">![Live Site](Assets/inter-live-site.png)</a>
+<a href="https://global-metrics-app.vercel.app/">![Live Site](Assets/inter-live-site.png)</a>
 
-<a href="vercel URL">![Live Site](Assets/029-global-metrics.gif)</a>
+<a href="https://global-metrics-app.vercel.app/">![Live Site](Assets/029-global-1.gif)</a>
+• <a href="https://css-tricks.com/having-a-little-fun-with-custom-focus-styles/">Custom focus styling</a> has been applied to nearly all elements for accessibility, and countries can be sorted by name, population, area, and <a href="https://www.investopedia.com/terms/g/gini-index.asp">Gini Index</a>.
+<br>
+• The Global Metrics app is responsive and has light and dark modes.
+<br>
+<br>
+<a href="https://global-metrics-app.vercel.app/">![Live Site](Assets/029-global-2.gif)</a>
+Countries can be searched, filtered, and viewed with data from the <a href="https://restcountries.eu/">REST Countries API</a>.
 
 #
 
@@ -79,13 +90,21 @@ npm run dev
 
 <a href=#resources>![Resources](Assets/inter-resources.png)</a>  
 
-- #### [***alt-text***](***URL***)  
+- #### [REST Countries Tutorial](https://youtu.be/v8o9iJU5hEA) by [Thu Nghiem](https://www.youtube.com/channel/UCmSmLukBF--YrKZ2g4akYAQ)
 
-- #### [***alt-text***](***URL***)  
+- #### [REST Countries API](https://restcountries.eu/)
 
-- #### [***alt-text***](***URL***)  
+- #### [Adobe Fonts](https://fonts.adobe.com/)
+  
+- #### [Google Fonts](https://fonts.google.com/)
 
-- #### [***alt-text***](***URL***)  
+- #### [CSS Gradient](https://cssgradient.io/)
+
+- #### [Custom Focus Styles](https://css-tricks.com/having-a-little-fun-with-custom-focus-styles/)
+
+- #### [{Outline: none;} Don't Do It!](http://www.outlinenone.com/)
+  
+- #### [The :focus-within CSS pseudo class](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within)
 
 - #### [My blog on how I created my Github READMEs](https://emmanueljose.medium.com/readme-a-makeover-story-b9c7be37a6de?sk=7ae6623d365409d875753e4604e42ffd) 
 

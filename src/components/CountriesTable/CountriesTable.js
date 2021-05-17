@@ -106,7 +106,7 @@ const CountriesTable = ({ countries }) => {
       {orderedCountries.map((country) => (
         <Link href={`/country/${country.alpha3Code}`} key={country.name}>
 
-          <div className={styles.row} tabIndex="0">
+          <a className={styles.row}>
             <div className={styles.flag}>
               <img src={country.flag} alt={country.name} />
             </div>
@@ -118,7 +118,7 @@ const CountriesTable = ({ countries }) => {
             <div className={styles.area}>{country.area || 0} km<sup style={{ fontSize: "0.5rem" }}>2</sup></div>
 
             <div className={styles.gini}>{country.gini || 0}%</div>
-          </div>
+          </a>
         </Link>
       ))}
     </div>
