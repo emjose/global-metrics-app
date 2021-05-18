@@ -91,7 +91,7 @@ Countries can be searched, filtered, and viewed with data from the <a href="http
 
 <a href=#resources>![Resources](Assets/inter-resources.png)</a>  
 
-- #### [REST Countries Tutorial](https://youtu.be/v8o9iJU5hEA) by [Thu Nghiem](https://www.youtube.com/channel/UCmSmLukBF--YrKZ2g4akYAQ)
+- #### [REST Countries API Tutorial](https://youtu.be/v8o9iJU5hEA) by [Thu Nghiem](https://www.youtube.com/channel/UCmSmLukBF--YrKZ2g4akYAQ)
 
 - #### [REST Countries API](https://restcountries.eu/)
 
