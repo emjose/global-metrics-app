@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import Layout from "../../components/Layout/Layout";
-import styles from "./Country.module.css";
+import styles from "./country.module.css";
 
 const getCountry = async (id) => {
 	const res = await fetch(`https://restcountries.com/v2/alpha/${id}`);
@@ -13,9 +13,10 @@ const Country = ({ country }) => {
 	const [borders, setBorders] = useState([]);
 
 	const getBorders = async () => {
-		const borders = await Promise.all(country.borders.map((border) => getCountry(border)));
-
-		setBorders(borders);
+		if (country.borders) {
+			const borders = await Promise.all(country.borders.map((border) => getCountry(border)));
+			setBorders(borders);
+		}
 	};
 
 	useEffect(() => {
@@ -57,14 +58,14 @@ const Country = ({ country }) => {
 						<div className={styles.details_panel_row} tabIndex="0">
 							<div className={styles.details_panel_label}>Languages</div>
 							<div className={styles.details_panel_value}>
-								{country.languages.map(({ name }) => name).join(", ")}
+								{country.languages ? country.languages.map(({ name }) => name).join(", ") : ""}
 							</div>
 						</div>
 
 						<div className={styles.details_panel_row} tabIndex="0">
 							<div className={styles.details_panel_label}>Currencies</div>
 							<div className={styles.details_panel_value}>
-								{country.currencies.map(({ name }) => name).join(", ")}
+								{country.currencies ? country.currencies.map(({ name }) => name).join(", ") : ""}
 							</div>
 						</div>
 
