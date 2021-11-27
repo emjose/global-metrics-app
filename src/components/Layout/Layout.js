@@ -3,6 +3,7 @@ import Link from "next/link";
 import styles from "./Layout.module.css";
 import { useEffect, useState } from "react";
 import FlareRoundedIcon from "@material-ui/icons/FlareRounded";
+import { Github } from "../github";
 
 const Layout = ({ children, title = "Global Metrics" }) => {
 	const [theme, setTheme] = useState("light");
@@ -53,6 +54,7 @@ const Layout = ({ children, title = "Global Metrics" }) => {
 						</a>
 					</Link>
 				</div>
+				<Github />
 			</header>
 
 			<main className={styles.main}>{children}</main>
