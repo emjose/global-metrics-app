@@ -3,7 +3,12 @@ import styles from "../styles/Github.module.css";
 export const Github = () => {
 	return (
 		<svg className={styles.svg} viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
-			<a title="View Source" href="URL" target="_blank" rel="noopener noreferrer">
+			<a
+				title="View Source"
+				href="https://github.com/emjose/global-metrics-app#header"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
 				<path className={styles.ribbonBackground} d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z" />
 				<path
 					className={styles.arm}
