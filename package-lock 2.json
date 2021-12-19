@@ -10,7 +10,7 @@
 			"dependencies": {
 				"@material-ui/core": "^4.11.0",
 				"@material-ui/icons": "^4.9.1",
-				"next": "^11.1.3",
+				"next": "11.1.2",
 				"react": "17.0.2",
 				"react-dom": "17.0.2"
 			},
@@ -44,11 +44,11 @@
 			}
 		},
 		"node_modules/@babel/highlight": {
-			"version": "7.16.0",
-			"resolved": "https://registry.npmjs.org/@babel/highlight/-/highlight-7.16.0.tgz",
-			"integrity": "sha512-t8MH41kUQylBtu2+4IQA3atqevA2lRgqA2wyVB/YiWmsDSuylZZuXOUy9ric30hfzauEFfdsuk/eXTRrGrfd0g==",
+			"version": "7.14.5",
+			"resolved": "https://registry.npmjs.org/@babel/highlight/-/highlight-7.14.5.tgz",
+			"integrity": "sha512-qf9u2WFWVV0MppaL877j2dBtQIDgmidgjGk5VIMw3OadXvYaXn66U1BFlH2t4+t3i+8PhedppRv+i40ABzd+gg==",
 			"dependencies": {
-				"@babel/helper-validator-identifier": "^7.15.7",
+				"@babel/helper-validator-identifier": "^7.14.5",
 				"chalk": "^2.0.0",
 				"js-tokens": "^4.0.0"
 			},
@@ -367,9 +367,9 @@
 			"integrity": "sha512-jDJTpta+P4p1NZTFVLHJ/TLFVYVcOqv6l8xwOeBKNPMgY/zDYH/YH7SJbvrr/h1RcS9GzbPcLKGzpuK9cV56UA=="
 		},
 		"node_modules/@next/env": {
-			"version": "11.1.3",
-			"resolved": "https://registry.npmjs.org/@next/env/-/env-11.1.3.tgz",
-			"integrity": "sha512-5+vaeooJuWmICSlmVaAC8KG3O8hwKasACVfkHj58xQuCB5SW0TKW3hWxgxkBuefMBn1nM0yEVPKokXCsYjBtng=="
+			"version": "11.1.2",
+			"resolved": "https://registry.npmjs.org/@next/env/-/env-11.1.2.tgz",
+			"integrity": "sha512-+fteyVdQ7C/OoulfcF6vd1Yk0FEli4453gr8kSFbU8sKseNSizYq6df5MKz/AjwLptsxrUeIkgBdAzbziyJ3mA=="
 		},
 		"node_modules/@next/eslint-plugin-next": {
 			"version": "11.1.2",
@@ -381,14 +381,14 @@
 			}
 		},
 		"node_modules/@next/polyfill-module": {
-			"version": "11.1.3",
-			"resolved": "https://registry.npmjs.org/@next/polyfill-module/-/polyfill-module-11.1.3.tgz",
-			"integrity": "sha512-7yr9cr4a0SrBoVE8psxXWK1wTFc8UzsY8Wc2cWGL7qA0hgtqACHaXC47M1ByJB410hFZenGrpE+KFaT1unQMyw=="
+			"version": "11.1.2",
+			"resolved": "https://registry.npmjs.org/@next/polyfill-module/-/polyfill-module-11.1.2.tgz",
+			"integrity": "sha512-xZmixqADM3xxtqBV0TpAwSFzWJP0MOQzRfzItHXf1LdQHWb0yofHHC+7eOrPFic8+ZGz5y7BdPkkgR1S25OymA=="
 		},
 		"node_modules/@next/react-dev-overlay": {
-			"version": "11.1.3",
-			"resolved": "https://registry.npmjs.org/@next/react-dev-overlay/-/react-dev-overlay-11.1.3.tgz",
-			"integrity": "sha512-zIwtMliSUR+IKl917ToFNB+0fD7bI5kYMdjHU/UEKpfIXAZPnXRHHISCvPDsczlr+bRsbjlUFW1CsNiuFedeuQ==",
+			"version": "11.1.2",
+			"resolved": "https://registry.npmjs.org/@next/react-dev-overlay/-/react-dev-overlay-11.1.2.tgz",
+			"integrity": "sha512-rDF/mGY2NC69mMg2vDqzVpCOlWqnwPUXB2zkARhvknUHyS6QJphPYv9ozoPJuoT/QBs49JJd9KWaAzVBvq920A==",
 			"dependencies": {
 				"@babel/code-frame": "7.12.11",
 				"anser": "1.4.9",
@@ -434,9 +434,9 @@
 			}
 		},
 		"node_modules/@next/react-refresh-utils": {
-			"version": "11.1.3",
-			"resolved": "https://registry.npmjs.org/@next/react-refresh-utils/-/react-refresh-utils-11.1.3.tgz",
-			"integrity": "sha512-144kD8q2nChw67V3AJJlPQ6NUJVFczyn10bhTynn9o2rY5DEnkzuBipcyMuQl2DqfxMkV7sn+yOCOYbrLCk9zg==",
+			"version": "11.1.2",
+			"resolved": "https://registry.npmjs.org/@next/react-refresh-utils/-/react-refresh-utils-11.1.2.tgz",
+			"integrity": "sha512-hsoJmPfhVqjZ8w4IFzoo8SyECVnN+8WMnImTbTKrRUHOVJcYMmKLL7xf7T0ft00tWwAl/3f3Q3poWIN2Ueql/Q==",
 			"peerDependencies": {
 				"react-refresh": "0.8.3",
 				"webpack": "^4 || ^5"
@@ -447,61 +447,16 @@
 				}
 			}
 		},
-		"node_modules/@next/swc-darwin-arm64": {
-			"version": "11.1.3",
-			"resolved": "https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-11.1.3.tgz",
-			"integrity": "sha512-TwP4krjhs+uU9pesDYCShEXZrLSbJr78p12e7XnLBBaNf20SgWLlVmQUT9gX9KbWan5V0sUbJfmcS8MRNHgYuA==",
-			"cpu": [
-				"arm64"
-			],
-			"optional": true,
-			"os": [
-				"darwin"
-			],
-			"engines": {
-				"node": ">= 10"
-			}
-		},
 		"node_modules/@next/swc-darwin-x64": {
-			"version": "11.1.3",
-			"resolved": "https://registry.npmjs.org/@next/swc-darwin-x64/-/swc-darwin-x64-11.1.3.tgz",
-			"integrity": "sha512-ZSWmkg/PxccHFNUSeBdrfaH8KwSkoeUtewXKvuYYt7Ph0yRsbqSyNIvhUezDua96lApiXXq6EL2d1THfeWomvw==",
+			"version": "11.1.2",
+			"resolved": "https://registry.npmjs.org/@next/swc-darwin-x64/-/swc-darwin-x64-11.1.2.tgz",
+			"integrity": "sha512-PGOp0E1GisU+EJJlsmJVGE+aPYD0Uh7zqgsrpD3F/Y3766Ptfbe1lEPPWnRDl+OzSSrSrX1lkyM/Jlmh5OwNvA==",
 			"cpu": [
 				"x64"
 			],
 			"optional": true,
 			"os": [
 				"darwin"
-			],
-			"engines": {
-				"node": ">= 10"
-			}
-		},
-		"node_modules/@next/swc-linux-x64-gnu": {
-			"version": "11.1.3",
-			"resolved": "https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-11.1.3.tgz",
-			"integrity": "sha512-PrTBN0iZudAuj4jSbtXcdBdmfpaDCPIneG4Oms4zcs93KwMgLhivYW082Mvlgx9QVEiRm7+RkFpIVtG/i7JitA==",
-			"cpu": [
-				"x64"
-			],
-			"optional": true,
-			"os": [
-				"linux"
-			],
-			"engines": {
-				"node": ">= 10"
-			}
-		},
-		"node_modules/@next/swc-win32-x64-msvc": {
-			"version": "11.1.3",
-			"resolved": "https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-11.1.3.tgz",
-			"integrity": "sha512-mRwbscVjRoHk+tDY7XbkT5d9FCwujFIQJpGp0XNb1i5OHCSDO8WW/C9cLEWS4LxKRbIZlTLYg1MTXqLQkvva8w==",
-			"cpu": [
-				"x64"
-			],
-			"optional": true,
-			"os": [
-				"win32"
 			],
 			"engines": {
 				"node": ">= 10"
@@ -3352,16 +3307,16 @@
 			"dev": true
 		},
 		"node_modules/next": {
-			"version": "11.1.3",
-			"resolved": "https://registry.npmjs.org/next/-/next-11.1.3.tgz",
-			"integrity": "sha512-ud/gKmnKQ8wtHC+pd1ZiqPRa7DdgulPkAk94MbpsspfNliwZkYs9SIYWhlLSyg+c661LzdUI2nZshvrtggSYWA==",
+			"version": "11.1.2",
+			"resolved": "https://registry.npmjs.org/next/-/next-11.1.2.tgz",
+			"integrity": "sha512-azEYL0L+wFjv8lstLru3bgvrzPvK0P7/bz6B/4EJ9sYkXeW8r5Bjh78D/Ol7VOg0EIPz0CXoe72hzAlSAXo9hw==",
 			"dependencies": {
 				"@babel/runtime": "7.15.3",
 				"@hapi/accept": "5.0.2",
-				"@next/env": "11.1.3",
-				"@next/polyfill-module": "11.1.3",
-				"@next/react-dev-overlay": "11.1.3",
-				"@next/react-refresh-utils": "11.1.3",
+				"@next/env": "11.1.2",
+				"@next/polyfill-module": "11.1.2",
+				"@next/react-dev-overlay": "11.1.2",
+				"@next/react-refresh-utils": "11.1.2",
 				"@node-rs/helper": "1.2.1",
 				"assert": "2.0.0",
 				"ast-types": "0.13.2",
@@ -3414,10 +3369,10 @@
 				"node": ">=12.0.0"
 			},
 			"optionalDependencies": {
-				"@next/swc-darwin-arm64": "11.1.3",
-				"@next/swc-darwin-x64": "11.1.3",
-				"@next/swc-linux-x64-gnu": "11.1.3",
-				"@next/swc-win32-x64-msvc": "11.1.3"
+				"@next/swc-darwin-arm64": "11.1.2",
+				"@next/swc-darwin-x64": "11.1.2",
+				"@next/swc-linux-x64-gnu": "11.1.2",
+				"@next/swc-win32-x64-msvc": "11.1.2"
 			},
 			"peerDependencies": {
 				"fibers": ">= 3.1.0",
@@ -5095,11 +5050,11 @@
 			"integrity": "sha512-K4JvCtQqad9OY2+yTU8w+E82ywk/fe+ELNlt1G8z3bVGlZfn/hOcQQsUhGhW/N+tb3fxK800wLtKOE/aM0m72w=="
 		},
 		"@babel/highlight": {
-			"version": "7.16.0",
-			"resolved": "https://registry.npmjs.org/@babel/highlight/-/highlight-7.16.0.tgz",
-			"integrity": "sha512-t8MH41kUQylBtu2+4IQA3atqevA2lRgqA2wyVB/YiWmsDSuylZZuXOUy9ric30hfzauEFfdsuk/eXTRrGrfd0g==",
+			"version": "7.14.5",
+			"resolved": "https://registry.npmjs.org/@babel/highlight/-/highlight-7.14.5.tgz",
+			"integrity": "sha512-qf9u2WFWVV0MppaL877j2dBtQIDgmidgjGk5VIMw3OadXvYaXn66U1BFlH2t4+t3i+8PhedppRv+i40ABzd+gg==",
 			"requires": {
-				"@babel/helper-validator-identifier": "^7.15.7",
+				"@babel/helper-validator-identifier": "^7.14.5",
 				"chalk": "^2.0.0",
 				"js-tokens": "^4.0.0"
 			}
@@ -5318,9 +5273,9 @@
 			"integrity": "sha512-jDJTpta+P4p1NZTFVLHJ/TLFVYVcOqv6l8xwOeBKNPMgY/zDYH/YH7SJbvrr/h1RcS9GzbPcLKGzpuK9cV56UA=="
 		},
 		"@next/env": {
-			"version": "11.1.3",
-			"resolved": "https://registry.npmjs.org/@next/env/-/env-11.1.3.tgz",
-			"integrity": "sha512-5+vaeooJuWmICSlmVaAC8KG3O8hwKasACVfkHj58xQuCB5SW0TKW3hWxgxkBuefMBn1nM0yEVPKokXCsYjBtng=="
+			"version": "11.1.2",
+			"resolved": "https://registry.npmjs.org/@next/env/-/env-11.1.2.tgz",
+			"integrity": "sha512-+fteyVdQ7C/OoulfcF6vd1Yk0FEli4453gr8kSFbU8sKseNSizYq6df5MKz/AjwLptsxrUeIkgBdAzbziyJ3mA=="
 		},
 		"@next/eslint-plugin-next": {
 			"version": "11.1.2",
@@ -5332,14 +5287,14 @@
 			}
 		},
 		"@next/polyfill-module": {
-			"version": "11.1.3",
-			"resolved": "https://registry.npmjs.org/@next/polyfill-module/-/polyfill-module-11.1.3.tgz",
-			"integrity": "sha512-7yr9cr4a0SrBoVE8psxXWK1wTFc8UzsY8Wc2cWGL7qA0hgtqACHaXC47M1ByJB410hFZenGrpE+KFaT1unQMyw=="
+			"version": "11.1.2",
+			"resolved": "https://registry.npmjs.org/@next/polyfill-module/-/polyfill-module-11.1.2.tgz",
+			"integrity": "sha512-xZmixqADM3xxtqBV0TpAwSFzWJP0MOQzRfzItHXf1LdQHWb0yofHHC+7eOrPFic8+ZGz5y7BdPkkgR1S25OymA=="
 		},
 		"@next/react-dev-overlay": {
-			"version": "11.1.3",
-			"resolved": "https://registry.npmjs.org/@next/react-dev-overlay/-/react-dev-overlay-11.1.3.tgz",
-			"integrity": "sha512-zIwtMliSUR+IKl917ToFNB+0fD7bI5kYMdjHU/UEKpfIXAZPnXRHHISCvPDsczlr+bRsbjlUFW1CsNiuFedeuQ==",
+			"version": "11.1.2",
+			"resolved": "https://registry.npmjs.org/@next/react-dev-overlay/-/react-dev-overlay-11.1.2.tgz",
+			"integrity": "sha512-rDF/mGY2NC69mMg2vDqzVpCOlWqnwPUXB2zkARhvknUHyS6QJphPYv9ozoPJuoT/QBs49JJd9KWaAzVBvq920A==",
 			"requires": {
 				"@babel/code-frame": "7.12.11",
 				"anser": "1.4.9",
@@ -5374,33 +5329,15 @@
 			}
 		},
 		"@next/react-refresh-utils": {
-			"version": "11.1.3",
-			"resolved": "https://registry.npmjs.org/@next/react-refresh-utils/-/react-refresh-utils-11.1.3.tgz",
-			"integrity": "sha512-144kD8q2nChw67V3AJJlPQ6NUJVFczyn10bhTynn9o2rY5DEnkzuBipcyMuQl2DqfxMkV7sn+yOCOYbrLCk9zg==",
+			"version": "11.1.2",
+			"resolved": "https://registry.npmjs.org/@next/react-refresh-utils/-/react-refresh-utils-11.1.2.tgz",
+			"integrity": "sha512-hsoJmPfhVqjZ8w4IFzoo8SyECVnN+8WMnImTbTKrRUHOVJcYMmKLL7xf7T0ft00tWwAl/3f3Q3poWIN2Ueql/Q==",
 			"requires": {}
 		},
-		"@next/swc-darwin-arm64": {
-			"version": "11.1.3",
-			"resolved": "https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-11.1.3.tgz",
-			"integrity": "sha512-TwP4krjhs+uU9pesDYCShEXZrLSbJr78p12e7XnLBBaNf20SgWLlVmQUT9gX9KbWan5V0sUbJfmcS8MRNHgYuA==",
-			"optional": true
-		},
 		"@next/swc-darwin-x64": {
-			"version": "11.1.3",
-			"resolved": "https://registry.npmjs.org/@next/swc-darwin-x64/-/swc-darwin-x64-11.1.3.tgz",
-			"integrity": "sha512-ZSWmkg/PxccHFNUSeBdrfaH8KwSkoeUtewXKvuYYt7Ph0yRsbqSyNIvhUezDua96lApiXXq6EL2d1THfeWomvw==",
-			"optional": true
-		},
-		"@next/swc-linux-x64-gnu": {
-			"version": "11.1.3",
-			"resolved": "https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-11.1.3.tgz",
-			"integrity": "sha512-PrTBN0iZudAuj4jSbtXcdBdmfpaDCPIneG4Oms4zcs93KwMgLhivYW082Mvlgx9QVEiRm7+RkFpIVtG/i7JitA==",
-			"optional": true
-		},
-		"@next/swc-win32-x64-msvc": {
-			"version": "11.1.3",
-			"resolved": "https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-11.1.3.tgz",
-			"integrity": "sha512-mRwbscVjRoHk+tDY7XbkT5d9FCwujFIQJpGp0XNb1i5OHCSDO8WW/C9cLEWS4LxKRbIZlTLYg1MTXqLQkvva8w==",
+			"version": "11.1.2",
+			"resolved": "https://registry.npmjs.org/@next/swc-darwin-x64/-/swc-darwin-x64-11.1.2.tgz",
+			"integrity": "sha512-PGOp0E1GisU+EJJlsmJVGE+aPYD0Uh7zqgsrpD3F/Y3766Ptfbe1lEPPWnRDl+OzSSrSrX1lkyM/Jlmh5OwNvA==",
 			"optional": true
 		},
 		"@node-rs/helper": {
@@ -7586,20 +7523,20 @@
 			"dev": true
 		},
 		"next": {
-			"version": "11.1.3",
-			"resolved": "https://registry.npmjs.org/next/-/next-11.1.3.tgz",
-			"integrity": "sha512-ud/gKmnKQ8wtHC+pd1ZiqPRa7DdgulPkAk94MbpsspfNliwZkYs9SIYWhlLSyg+c661LzdUI2nZshvrtggSYWA==",
+			"version": "11.1.2",
+			"resolved": "https://registry.npmjs.org/next/-/next-11.1.2.tgz",
+			"integrity": "sha512-azEYL0L+wFjv8lstLru3bgvrzPvK0P7/bz6B/4EJ9sYkXeW8r5Bjh78D/Ol7VOg0EIPz0CXoe72hzAlSAXo9hw==",
 			"requires": {
 				"@babel/runtime": "7.15.3",
 				"@hapi/accept": "5.0.2",
-				"@next/env": "11.1.3",
-				"@next/polyfill-module": "11.1.3",
-				"@next/react-dev-overlay": "11.1.3",
-				"@next/react-refresh-utils": "11.1.3",
-				"@next/swc-darwin-arm64": "11.1.3",
-				"@next/swc-darwin-x64": "11.1.3",
-				"@next/swc-linux-x64-gnu": "11.1.3",
-				"@next/swc-win32-x64-msvc": "11.1.3",
+				"@next/env": "11.1.2",
+				"@next/polyfill-module": "11.1.2",
+				"@next/react-dev-overlay": "11.1.2",
+				"@next/react-refresh-utils": "11.1.2",
+				"@next/swc-darwin-arm64": "11.1.2",
+				"@next/swc-darwin-x64": "11.1.2",
+				"@next/swc-linux-x64-gnu": "11.1.2",
+				"@next/swc-win32-x64-msvc": "11.1.2",
 				"@node-rs/helper": "1.2.1",
 				"assert": "2.0.0",
 				"ast-types": "0.13.2",
