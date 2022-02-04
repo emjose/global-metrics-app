@@ -51,7 +51,13 @@ const Layout = ({ children, title = "Global Metrics" }) => {
 
 					<Link href="/">
 						<a>
-							<Image className={styles.logo} src="/gm-logo.png" alt="Global Metrics" />
+							<Image
+								className={styles.logo}
+								src="/gm-logo.png"
+								alt="Global Metrics"
+								width={847}
+								height={84}
+							/>
 						</a>
 					</Link>
 				</div>
