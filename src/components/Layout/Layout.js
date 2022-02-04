@@ -4,6 +4,7 @@ import styles from "./Layout.module.css";
 import { useEffect, useState } from "react";
 import FlareRoundedIcon from "@material-ui/icons/FlareRounded";
 import { Github } from "../github";
+import Image from "next/image";
 
 const Layout = ({ children, title = "Global Metrics" }) => {
 	const [theme, setTheme] = useState("light");
@@ -50,7 +51,7 @@ const Layout = ({ children, title = "Global Metrics" }) => {
 
 					<Link href="/">
 						<a>
-							<img className={styles.logo} src="/gm-logo.png" alt="Global Metrics" />
+							<Image className={styles.logo} src="/gm-logo.png" alt="Global Metrics" />
 						</a>
 					</Link>
 				</div>
