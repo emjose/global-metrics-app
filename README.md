@@ -37,7 +37,9 @@
 ### Day 29: May 18, 2021
 
 -   I worked on a great <a href="https://youtu.be/v8o9iJU5hEA">Next.js tutorial</a> by <a href="https://www.youtube.com/channel/UCmSmLukBF--YrKZ2g4akYAQ">Thu Nghiem</a> that uses the <a href="https://restcountries.eu/">REST Countries API</a>.
+
 -   Countries of the world can be sorted by data, and the app is responsive with light and dark modes.
+
 -   This app also gave me a better understanding of accessibility and the importance of focus state styling for keyboard-only navigation.
 
 #
