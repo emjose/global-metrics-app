@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import SearchInput from "../components/SearchInput/SearchInput";
 import CountriesTable from "../components/CountriesTable/CountriesTable";
 import { useState } from "react";
+import ScrollButton from "../components/ScrollButton";
 
 export default function Home({ countries }) {
 	const [keyword, setKeyword] = useState("");
@@ -30,6 +31,7 @@ export default function Home({ countries }) {
 			</div>
 
 			<CountriesTable countries={filteredCountries} />
+			<ScrollButton scrollPoint={100} />
 		</Layout>
 	);
 }
