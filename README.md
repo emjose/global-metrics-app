@@ -92,16 +92,22 @@ Countries can be searched, filtered, and viewed with data from the <a href="http
 
 -   #### [REST Countries API Tutorial](https://youtu.be/v8o9iJU5hEA) by [Thu Nghiem](https://www.youtube.com/channel/UCmSmLukBF--YrKZ2g4akYAQ)
 
--   #### [REST Countries API](https://restcountries.eu/)
+-   #### [REST Countries API](https://restcountries.com/)
 
 -   #### [Adobe Fonts](https://fonts.adobe.com/)
+
+-   #### [React Icons](https://react-icons.github.io/react-icons)
+
 -   #### [Google Fonts](https://fonts.google.com/)
 
 -   #### [CSS Gradient](https://cssgradient.io/)
 
 -   #### [Custom Focus Styles](https://css-tricks.com/having-a-little-fun-with-custom-focus-styles/)
 
+-   #### [React Scroll to Top Button](https://www.geeksforgeeks.org/how-to-create-a-scroll-to-top-button-in-react-js/)
+
 -   #### [{Outline: none;} Don't Do It!](http://www.outlinenone.com/)
+
 -   #### [The :focus-within CSS pseudo class](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within)
 
 -   #### [My blog on how I created my Github READMEs](https://emmanueljose.medium.com/readme-a-makeover-story-b9c7be37a6de?sk=7ae6623d365409d875753e4604e42ffd)
