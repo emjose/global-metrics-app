@@ -24,6 +24,24 @@ export default function Home({ countries }) {
 
 	return (
 		<Layout>
+			<Head>
+				<title>Global Metrics</title>
+				<meta charset="UTF-8" />
+				<meta property="og:title" content="Global Metrics" />
+				<meta property="og:image" content="/meta-029-global-3.png" />
+				<meta
+					property="og:image:alt"
+					content="A diagram table of 250 countries and territories. Click to visit website."
+				/>
+				<meta property="og:description" content="Project by Emmanuel Jose" />
+				<meta property="og:url" content="https://global-metrics-app.vercel.app/" />
+				<meta property="og:type" content="website" />
+				<meta name="twitter:card" content="summary" />
+				<meta name="keywords" content="HTML, CSS, JavaScript, React, Next.js, countries, global, API" />
+				<meta name="author" content="Emmanuel Jose" />
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+				<link rel="icon" href="/favicon.ico" />
+			</Head>
 			<div className={styles.inputContainer}>
 				<div className={styles.input}>
 					<SearchInput placeholder="search by country, region, or subregion" onChange={onInputChange} />
