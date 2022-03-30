@@ -28,7 +28,7 @@ export default function Home({ countries }) {
 				<title>Global Metrics</title>
 				<meta charset="UTF-8" />
 				<meta property="og:title" content="Global Metrics" />
-				<meta property="og:image" content="/meta-029-global-3.png" />
+				<meta property="og:image" content="https://global-metrics-app.vercel.app/meta-029-global-3.png" />
 				<meta
 					property="og:image:alt"
 					content="A diagram table of 250 countries and territories. Click to visit website."
