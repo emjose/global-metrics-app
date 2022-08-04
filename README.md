@@ -80,8 +80,6 @@ yarn dev
 
 • The Global Metrics app is responsive and has light and dark modes.
 
-<br>
-
 #
 
 <a href="https://global-metrics-app.vercel.app/">![Live Site](Assets/029-global-2.gif)</a>
