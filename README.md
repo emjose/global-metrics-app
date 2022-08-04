@@ -50,7 +50,7 @@
 
 #### Git clone and cd into the repo folder:
 
-```
+```console
 git clone git@github.com:emjose/global-metrics-app.git && cd global-metrics-app
 ```
 
