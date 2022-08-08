@@ -66,7 +66,7 @@ yarn install
 yarn dev
 ```
 
-#### Open [http://localhost:3000](http://localhost:3000) with your browser to launch the Global Metrics app.
+#### 4. Open [http://localhost:3000](http://localhost:3000) with your browser to launch the Global Metrics app.
 
 #
 
