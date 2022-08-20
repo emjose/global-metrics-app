@@ -37,6 +37,11 @@ export default function Home({ countries }) {
 				<meta property="og:url" content="https://global-metrics-app.vercel.app/" />
 				<meta property="og:type" content="website" />
 				<meta name="twitter:card" content="summary" />
+				<meta
+					name="description"
+					content="An app about 250 countries and territories. Click to visit website."
+				/>
+				<meta name="theme-color" content="#fff9f9" />
 				<meta name="keywords" content="HTML, CSS, JavaScript, React, Next.js, countries, global, API" />
 				<meta name="author" content="Emmanuel Jose" />
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
