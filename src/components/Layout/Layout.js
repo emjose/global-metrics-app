@@ -43,6 +43,7 @@ const Layout = ({ children, title = "Global Metrics" }) => {
 							className={styles.themeSwitcher}
 							onClick={switchTheme}
 							tabIndex="0"
+							aria-label="switch to light or dark mode"
 							style={{ cursor: "pointer" }}
 						>
 							<FlareRoundedIcon style={{ fontSize: 30 }} alt="switch to light or dark mode" />
