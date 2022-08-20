@@ -165,7 +165,8 @@ a {
 	width: 1000px;
 } */
 
-img .logo {
+img,
+.logo {
 	width: 1000px;
 	height: 100%;
 }
