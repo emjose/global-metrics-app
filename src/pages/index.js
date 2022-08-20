@@ -7,6 +7,17 @@ import { useState } from "react";
 import ScrollButton from "../components/ScrollButton";
 
 export default function Home({ countries }) {
+	if ("serviceWorker" in navigator) {
+		navigator.serviceWorker
+			.register("/sw.js")
+			.then(function (registration) {
+				console.log("%c❤️", heart);
+			})
+			.catch(function (err) {
+				console.log(err);
+			});
+	}
+
 	const [keyword, setKeyword] = useState("");
 
 	const filteredCountries = countries.filter(
