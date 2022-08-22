@@ -13,7 +13,7 @@
 
 .arm,
 .octoBody {
-	fill: #fff;
+	fill: var(--background-color);
 }
 
 .ribbonBackground {

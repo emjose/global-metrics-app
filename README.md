@@ -28,6 +28,8 @@
 -   [Resources](#resources)
 -   [Let's Connect!](#lets-connect)
 
+<br>
+
 #
 
 <p id="100days"><p>
@@ -41,6 +43,8 @@
 -   Countries of the world can be sorted by data, and the app is responsive with light and dark modes.
 
 -   This app also gave me a better understanding of accessibility and the importance of focus state styling for keyboard-only navigation.
+
+<br>
 
 #
 
@@ -69,6 +73,8 @@ yarn dev
 
 #### 4. Open [http://localhost:3000](http://localhost:3000) with your browser to launch the Global Metrics app.
 
+<br>
+
 #
 
 <p id="live-site"><p>
@@ -89,6 +95,8 @@ yarn dev
 
 Countries can be searched, filtered, and viewed with data from the <a href="https://restcountries.com/">REST Countries API</a>.
 
+<br>
+
 #
 
 <p id="resources"><p>
@@ -107,15 +115,31 @@ Countries can be searched, filtered, and viewed with data from the <a href="http
 
 -   #### [CSS Gradient](https://cssgradient.io/)
 
+-   #### [PWA with Next.js](https://dev.to/anuraggharat/pwa-with-nextjs-5178)
+
+-   #### [Custom `Document`](https://nextjs.org/docs/advanced-features/custom-document)
+
 -   #### [Custom Focus Styles](https://css-tricks.com/having-a-little-fun-with-custom-focus-styles/)
 
 -   #### [React Scroll to Top Button](https://www.geeksforgeeks.org/how-to-create-a-scroll-to-top-button-in-react-js/)
 
 -   #### [{Outline: none;} Don't Do It!](http://www.outlinenone.com/)
 
+-   #### [Next.js Progressive Web App](https://www.coffeeclass.io/articles/nextjs-pwa)
+
+-   #### [How to make a Next.js app a PWA](https://medium.com/geekculture/how-to-make-a-next-js-app-a-pwa-a5e2b13da548)
+
+-   #### [Zero Config PWA Plugin for Next.js](https://www.npmjs.com/package/next-pwa)
+
 -   #### [The :focus-within CSS pseudo class](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within)
 
+-   #### [NextJS add lang attribute to HTML tag](https://daily-dev-tips.com/posts/nextjs-add-lang-attribute-to-html-tag/)
+
+-   #### [How to make your Next.js app into a progressive web app](https://melvingeorge.me/blog/nextjs-pwa#make-manifest)
+
 -   #### [My blog on how I created my Github READMEs](https://emmanueljose.medium.com/readme-a-makeover-story-b9c7be37a6de?sk=7ae6623d365409d875753e4604e42ffd)
+
+<br>
 
 #
 
