@@ -60,9 +60,10 @@ git clone git@github.com:emjose/global-metrics-app.git && cd global-metrics-app
 yarn install
 ```
 
-#### 3. Run the development server:
+#### 3. Install Yarn and run the development server:
 
 ```console
+yarn
 yarn dev
 ```
 
