@@ -56,8 +56,8 @@ const Layout = ({ children, title = "Global Metrics" }) => {
 								className={styles.logo}
 								src="/gm-logo.png"
 								alt="Global Metrics"
-								width={847}
-								height={84}
+								width={1218}
+								height={122}
 							/>
 						</a>
 					</Link>
