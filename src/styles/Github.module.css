@@ -17,9 +17,15 @@
 }
 
 .ribbonBackground {
-	fill: #ffac9e;
+	fill: var(--github-fill);
 }
 
+.svg:focus-within .ribbonBackground {
+	fill: var(--github-focus);
+	outline: none;
+}
+
+.svg:focus-within .arm,
 .svg:hover .arm {
 	animation: wave 560ms ease-in-out;
 }

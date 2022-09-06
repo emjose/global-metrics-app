@@ -12,7 +12,7 @@
 	--font-family: neue-haas-unica, sans-serif;
 	--box-shadow: 2px 2px 8px 2px rgba(219, 208, 214, 0.322);
 	--letter-spacing: 0.5px;
-	--header-color: #c5195be5;
+	--header-color: #f2166ae5;
 	--header-focus: #ffb3c962;
 	--header-focus-outline: 2px solid #fa8baaa8;
 	--header-hover: #ffb3c93b;
@@ -34,6 +34,8 @@
 	--footer-color: #685c63;
 	--hover-font-color: rgb(143, 45, 156);
 	--footer-focus-color: black;
+	--github-fill: #ffac9e;
+	--github-focus: var(--header-color);
 }
 
 [data-theme="dark"] {
@@ -49,7 +51,7 @@
 	--header-focus: #fd7a2ee8;
 	--header-hover: #4c415c;
 	--header-focus-outline: 0px solid #be2f03d7;
-	--header-color: #d199e2d7;
+	--header-color: #ff8e1c;
 	--box-shadow: none;
 	--row-border: 0px solid #4d4d4d00;
 	--country-color: #ffffffd5;
