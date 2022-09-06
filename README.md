@@ -83,9 +83,11 @@ yarn dev
 
 <a href="https://global-metrics-app.vercel.app/">![Live Site](Assets/029-global-1.gif)</a>
 
-• <a href="https://css-tricks.com/having-a-little-fun-with-custom-focus-styles/">Custom focus styling</a> has been applied to nearly all elements for accessibility, and countries can be sorted by name, population, area, and <a href="https://www.investopedia.com/terms/g/gini-index.asp">Gini Index</a>.
+• **[Global Metrics](https://global-metrics-app.vercel.app/)** is keyboard-navigable and is a [progressive web app](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps).
 
-• The Global Metrics app is responsive and has light and dark modes.
+• **[Global Metrics](https://global-metrics-app.vercel.app/)** is responsive and has light and dark modes.
+
+• Countries can be sorted by name, population, area, and <a href="https://www.investopedia.com/terms/g/gini-index.asp">Gini Index</a>.
 
 #
 
@@ -134,6 +136,8 @@ Countries can be searched, filtered, and viewed with data from the <a href="http
 -   #### [The :focus-within CSS pseudo class](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within)
 
 -   #### [NextJS add lang attribute to HTML tag](https://daily-dev-tips.com/posts/nextjs-add-lang-attribute-to-html-tag/)
+
+-   #### [Having a Little Fun With Custom Focus Styles](https://css-tricks.com/having-a-little-fun-with-custom-focus-styles/)
 
 -   #### [How to make your Next.js app into a progressive web app](https://melvingeorge.me/blog/nextjs-pwa#make-manifest)
 
