@@ -71,6 +71,7 @@ export const getStaticProps = async () => {
 	};
 };
 
-// API: https://restcountries.eu/
+// Old API: https://restcountries.eu/
+// New API: https://restcountries.com/
 
 // Emmanuel Jose logo, Global Metrics logo, and favicon. © Emmanuel Jose. All Rights Reserved.
