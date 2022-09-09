@@ -11,7 +11,7 @@ export default function Home({ countries }) {
 
 	const filteredCountries = countries.filter(
 		(country) =>
-			country.name.toLowerCase().includes(keyword) ||
+			country.name.toString().toLowerCase().includes(keyword) ||
 			country.region.toLowerCase().includes(keyword) ||
 			country.subregion.toLowerCase().includes(keyword)
 	);
@@ -62,7 +62,7 @@ export default function Home({ countries }) {
 // export const getStaticProps = async () => {
 export const getStaticProps = async () => {
 	// const res = await fetch("https://restcountries.eu/rest/v2/all");
-	const res = await fetch("https://restcountries.com/v2/all");
+	const res = await fetch("https://restcountries.com/v3/all");
 	const countries = await res.json();
 
 	return {
