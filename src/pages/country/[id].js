@@ -96,7 +96,7 @@ const Country = ({ country }) => {
 
 							<div className={styles.details_panel_row} tabIndex="0">
 								<div className={styles.details_panel_label}>Native name</div>
-								<div className={styles.details_panel_value}>{country.nativeName}</div>
+								<div className={styles.details_panel_value}>{country.name.nativeName}</div>
 							</div>
 
 							<div className={styles.details_panel_row} tabIndex="0">

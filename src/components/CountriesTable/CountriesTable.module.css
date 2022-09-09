@@ -92,7 +92,7 @@
 	font-weight: 400;
 	letter-spacing: var(--letter-spacing);
 	border: var(--row-border);
-	transition: all 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
+	/* transition: all 0.3s ease-in-out, box-shadow 0.2s ease-in-out; */
 }
 
 .row:focus,
