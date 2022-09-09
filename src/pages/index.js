@@ -12,8 +12,8 @@ export default function Home({ countries }) {
 	const filteredCountries = countries.filter(
 		(country) =>
 			country.name.toString().toLowerCase().includes(keyword) ||
-			country.region.toLowerCase().includes(keyword) ||
-			country.subregion.toLowerCase().includes(keyword)
+			country.region.toString().toLowerCase().includes(keyword) ||
+			country.subregion.toString().toLowerCase().includes(keyword)
 	);
 
 	const onInputChange = (e) => {
