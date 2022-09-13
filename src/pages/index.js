@@ -64,44 +64,29 @@ export default function Home({ countries }) {
 	);
 }
 
+// export const getStaticProps = async () => {
+// 	const res = await fetch("https://restcountries.com/v2/all");
+// 	const countries = await res.json();
+
+// 	return {
+// 		props: {
+// 			countries,
+// 		},
+// 	};
+// };
+
+// Implement v3.1 in near future, investigate proper gini syntax.
 export const getStaticProps = async () => {
-	const res = await fetch("https://restcountries.com/v2/all");
+	const res = await fetch("https://restcountries.com/v3.1/all");
 	const countries = await res.json();
 
 	return {
 		props: {
 			countries,
 		},
+		revalidate: 3600,
 	};
 };
-
-// Implement v3.1 in near future, investigate proper gini syntax.
-// export const getStaticProps = async () => {
-// 	const res = await fetch("https://restcountries.com/v3.1/all");
-// 	const data = await res.json();
-
-// 	const countryBorders = {};
-
-// 	const countries = data.map((country) => {
-// 		countryBorders[country.cca3] = country.name.common;
-// 		return {
-// 			name: country.name.common,
-// 			population: country.population,
-// 			region: country.region,
-// 			capital: country.capital || null,
-// 			flags: country.flags,
-// 			cca3: country.cca3,
-// 			area: country.area,
-// 			// gini: Object.keys(country)[25],
-// 			gini: country.gini[Object.keys(country.gini)[0]],
-// 		};
-// 	});
-
-// 	return {
-// 		props: { countries, countryBorders },
-// 		revalidate: 250,
-// 	};
-// };
 
 // Old API: https://restcountries.eu/
 // New API: https://restcountries.com/

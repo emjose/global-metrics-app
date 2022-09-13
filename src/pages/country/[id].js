@@ -4,7 +4,7 @@ import styles from "./Country.module.css";
 import Head from "next/head";
 
 const getCountry = async (id) => {
-	const res = await fetch(`https://restcountries.com/v2/alpha/${id}`);
+	const res = await fetch(`https://restcountries.com/v3.1/alpha/${id}`);
 	const country = await res.json();
 
 	return country;
@@ -94,15 +94,15 @@ const Country = ({ country }) => {
 								</div>
 							</div>
 
-							<div className={styles.details_panel_row} tabIndex="0">
+							{/* <div className={styles.details_panel_row} tabIndex="0">
 								<div className={styles.details_panel_label}>Native name</div>
-								<div className={styles.details_panel_value}>{country.name.nativeName}</div>
-							</div>
+								<div className={styles.details_panel_value}>{country.nativeName}</div>
+							</div> */}
 
-							<div className={styles.details_panel_row} tabIndex="0">
+							{/* <div className={styles.details_panel_row} tabIndex="0">
 								<div className={styles.details_panel_label}>Gini</div>
 								<div className={styles.details_panel_value}>{country.gini} %</div>
-							</div>
+							</div> */}
 
 							<div className={styles.details_panel_borders} tabIndex="0">
 								<div className={styles.details_panel_borders_label}>Bordering Countries</div>
@@ -128,11 +128,11 @@ const Country = ({ country }) => {
 export default Country;
 
 export const getStaticPaths = async () => {
-	const res = await fetch("https://restcountries.com/v2/all");
+	const res = await fetch("https://restcountries.com/v3.1/all");
 	const countries = await res.json();
 
 	const paths = countries.map((country) => ({
-		params: { id: country.alpha3Code },
+		params: { id: country.cca3 },
 	}));
 
 	return {

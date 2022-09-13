@@ -94,6 +94,8 @@ const CountriesTable = ({ countries }) => {
 
 						<div className={styles.name}>{country.name}</div>
 
+						{/* <div className={styles.name}>{country.capital}</div> */}
+
 						<div className={styles.population}>{country.population}</div>
 
 						<div className={styles.area}>
