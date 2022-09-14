@@ -38,11 +38,13 @@
 
 ### Day 29: May 18, 2021
 
--   I worked on a great <a href="https://youtu.be/v8o9iJU5hEA">Next.js tutorial</a> by <a href="https://www.youtube.com/channel/UCmSmLukBF--YrKZ2g4akYAQ">Thu Nghiem</a> that uses the <a href="https://restcountries.eu/">REST Countries API</a>.
+-   I worked on a great <a href="https://youtu.be/v8o9iJU5hEA">Next.js tutorial</a> by <a href="https://www.youtube.com/channel/UCmSmLukBF--YrKZ2g4akYAQ">Thu Nghiem</a> that used the <a href="https://restcountries.eu/">restcountries.eu API</a>.
 
 -   Countries of the world can be sorted by data, and the app is responsive with light and dark modes.
 
 -   This app also gave me a better understanding of accessibility and the importance of focus state styling for keyboard-only navigation.
+
+-   **Update**: With the restcountries.eu API slated for [deprecation](https://web.dev/deprecations/), the **[Global Metrics](global-metrics-app.vercel.app)** app now fetches from the [restcountries.com, v3.1 API](https://restcountries.com/#api-endpoints-v3).
 
 <br>
 
@@ -89,13 +91,17 @@ yarn dev
 
 • Countries can be sorted by name, population, area, and <a href="https://www.investopedia.com/terms/g/gini-index.asp">Gini Index</a>.
 
+• **Note**: Sorting by Gini Index is currently incorrect and will be improved upon.
+
 #
 
 <br>
 
 <a href="https://global-metrics-app.vercel.app/">![Live Site](Assets/029-global-2.gif)</a>
 
-Countries can be searched, filtered, and viewed with data from the <a href="https://restcountries.com/">REST Countries API</a>.
+• Countries can be searched, filtered, and viewed with data from the <a href="https://restcountries.com/">REST Countries API</a>.
+
+• If present, border countries now link directly to their respective country `/id` page.
 
 <br>
 
@@ -116,6 +122,8 @@ Countries can be searched, filtered, and viewed with data from the <a href="http
 -   #### [Google Fonts](https://fonts.google.com/)
 
 -   #### [CSS Gradient](https://cssgradient.io/)
+
+-   #### [NextUI: Tooltip](https://nextui.org/docs/components/tooltip)
 
 -   #### [PWA with Next.js](https://dev.to/anuraggharat/pwa-with-nextjs-5178)
 
