@@ -58,7 +58,7 @@
 	margin: 0;
 }
 
-.details_panel_row_capital,
+.details_panel_row_official,
 .details_panel_row {
 	display: flex;
 	justify-content: space-between;
@@ -81,9 +81,9 @@
 .overview_panel:hover .overview_name,
 .overview_panel:focus .overview_name,
 .overview_panel:focus .overview_value,
-.details_panel_row_capital:hover .details_panel_label_capital,
-.details_panel_row_capital:hover .details_panel_value_capital,
-.details_panel_row_capital:focus .details_panel_value_capital,
+.details_panel_row_official:hover .details_panel_label_official,
+.details_panel_row_official:hover .details_panel_value_official,
+.details_panel_row_official:focus .details_panel_value_official,
 .details_panel_row:hover .details_panel_label,
 .details_panel_row:hover .details_panel_value,
 .details_panel_row:focus .details_panel_value,
@@ -97,8 +97,8 @@
 .overview_panel:focus .overview_label,
 .overview_panel:hover .overview_region,
 .overview_panel:hover .overview_label,
-.details_panel_row_capital:hover .details_panel_label_capital,
-.details_panel_row_capital:focus .details_panel_label_capital,
+.details_panel_row_official:hover .details_panel_label_official,
+.details_panel_row_official:focus .details_panel_label_official,
 .details_panel_row:hover .details_panel_label,
 .details_panel_row:focus .details_panel_label {
 	color: var(--hover-font-color);
@@ -111,17 +111,8 @@
 	color: var(--country-color);
 }
 
-/* .details_panel_borders:focus,
-.details_panel_borders:hover {
-	outline: none;
-	background: #fff1c5;
-	background: linear-gradient(322deg, #fae6a5 0%, #ffcac4 48%, #ffb3c8 100%);
-	border-bottom-left-radius: 8px;
-	border-bottom-right-radius: 8px;
-} */
-
-.details_panel_row_capital:focus,
-.details_panel_row_capital:hover {
+.details_panel_row_official:focus,
+.details_panel_row_official:hover {
 	outline: none;
 	background: #fff1c5;
 	background: linear-gradient(322deg, #fae6a5 0%, #ffcac4 48%, #ffb3c8 100%);
@@ -129,14 +120,14 @@
 	border-top-right-radius: 8px;
 }
 
-.details_panel_label_capital,
+.details_panel_label_official,
 .details_panel_label {
 	color: var(--country-overview-color);
 	font-size: 22px;
 	font-weight: 300;
 }
 
-.details_panel_value_capital,
+.details_panel_value_official,
 .details_panel_value {
 	font-size: 22px;
 	font-weight: 500;
@@ -170,7 +161,6 @@
 }
 
 .details_panel_borders_country img {
-	box-shadow: 2px 2px 2px black;
 	box-shadow: var(--flag-shadow);
 }
 
@@ -183,7 +173,7 @@ For custom focus to work, the focus pseudo class must be first, then the selecto
 .details_panel_borders_country:hover {
 	outline: var(--flag-outline);
 	border-radius: 4px;
-	outline-offset: 4px;
+	outline-offset: 8px;
 	background-color: var(--row-background);
 }
 
@@ -233,9 +223,9 @@ For custom focus to work, the focus pseudo class must be first, then the selecto
 	.overview_region,
 	.overview_value,
 	.overview_label,
-	.details_panel_label_capital,
+	.details_panel_label_official,
 	.details_panel_label,
-	.details_panel_value_capital,
+	.details_panel_value_official,
 	.details_panel_value,
 	.details_panel_borders_label {
 		font-size: 0.9em;

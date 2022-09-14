@@ -4,7 +4,7 @@ export const Github = () => {
 	return (
 		<svg className={styles.svg} viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
 			<a
-				title="View Source"
+				title="View on GitHub"
 				href="https://github.com/emjose/global-metrics-app#header"
 				target="_blank"
 				rel="noopener noreferrer"

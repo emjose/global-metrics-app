@@ -34,13 +34,13 @@
 	--overview-font-weight: 600;
 	--details-line-color: 1.5px solid #f3e0f1;
 	--footer-color: #685c63;
-	--hover-font-color: rgb(143, 45, 156);
+	--hover-font-color: rgb(106, 27, 117);
 	--footer-focus-color: black;
 	--github-fill: #ffac9e;
 	--github-focus: var(--header-color);
 	--flag-shadow: rgba(99, 99, 99, 0.891) 0px 2px 8px 0px;
 	--flag-shadow-hover: rgba(99, 99, 99, 0.447) 0px 2px 8px 0px;
-	--flag-outline: 3px solid black;
+	--flag-outline: 3px solid rgba(192, 19, 103, 0.654);
 }
 
 [data-theme="dark"] {

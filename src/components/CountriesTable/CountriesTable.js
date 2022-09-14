@@ -2,6 +2,7 @@ import Link from "next/link";
 import { KeyboardArrowDownRounded, KeyboardArrowUpRounded } from "@material-ui/icons";
 import { useState } from "react";
 import styles from "./CountriesTable.module.css";
+import { Tooltip } from "@nextui-org/react";
 
 const orderBy = (countries, value, direction) => {
 	if (direction === "asc") {
@@ -76,7 +77,9 @@ const CountriesTable = ({ countries }) => {
 				</button>
 
 				<button className={styles.heading_gini} onClick={() => setValueAndDirection("gini")}>
-					<div>Gini</div>
+					<Tooltip content={"The Gini index measures income distribution."} color="error" hideArrow>
+						<div>Gini</div>
+					</Tooltip>
 					{value === "gini" && <SortArrow direction={direction} />}
 				</button>
 			</div>

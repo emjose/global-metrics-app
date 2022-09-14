@@ -27,22 +27,21 @@ const Country = ({ country }) => {
 	return (
 		<Layout title={country.name.common}>
 			<div className={styles.container}>
+				{/* Left Panel */}
 				<div className={styles.container_left}>
 					<div className={styles.overview_panel} tabIndex="0">
-						<img src={country.flags.svg} alt={country.name.common}></img>
-
+						{/* Flag and Name */}
+						<img src={country.flags.png} alt={country.name.common}></img>
 						<h1 className={styles.overview_name}>{country.name.common}</h1>
-
 						<div className={styles.overview_region}>{country.region}</div>
 
+						{/* Population and Area */}
 						<div className={styles.overview_numbers}>
-							{/* Population */}
 							<div className={styles.overview_population}>
 								<div className={styles.overview_label}>Population</div>
 								<div className={styles.overview_value}>{country.population}</div>
 							</div>
 
-							{/* Area */}
 							<div className={styles.overview_area}>
 								<div className={styles.overview_label}>Area</div>
 								<div className={styles.overview_value}>
@@ -53,16 +52,18 @@ const Country = ({ country }) => {
 					</div>
 				</div>
 
+				{/* Right Panel */}
 				<div className={styles.container_right}>
 					<div className={styles.details_panel}>
-						<div className={styles.details_panel_row} tabIndex="0">
-							<div className={styles.details_panel_label}>Official name</div>
-							<div className={styles.details_panel_value}>{country.name.official}</div>
+						{/* Official Name */}
+						<div className={styles.details_panel_row_official} tabIndex="0">
+							<div className={styles.details_panel_label_official}>Official Name</div>
+							<div className={styles.details_panel_value_official}>{country.name.official}</div>
 						</div>
-
+						{/* Native Names */}
 						{country.name.nativeName && (
 							<div className={styles.details_panel_row} tabIndex="0">
-								<div className={styles.details_panel_label}>Native names</div>
+								<div className={styles.details_panel_label}>Native Names</div>
 								<div className={styles.details_panel_value}>
 									{Object.values(country.name.nativeName)
 										.flatMap((cur) => cur["official"])
@@ -71,31 +72,31 @@ const Country = ({ country }) => {
 								</div>
 							</div>
 						)}
-
+						{/* Capital */}
 						<div className={styles.details_panel_row} tabIndex="0">
 							<div className={styles.details_panel_label}>Capital</div>
 							<div className={styles.details_panel_value}>{country.capital}</div>
 						</div>
-
+						{/* Subregion */}
 						<div className={styles.details_panel_row} tabIndex="0">
 							<div className={styles.details_panel_label}>Subregion</div>
 							<div className={styles.details_panel_value}>{country.subregion}</div>
 						</div>
-
+						{/* Languages */}
 						<div className={styles.details_panel_row} tabIndex="0">
 							<div className={styles.details_panel_label}>Languages</div>
 							<div className={styles.details_panel_value}>
 								{"languages" in country ? Object?.values(country.languages).join(", ") : "undefined"}
 							</div>
 						</div>
-
+						{/* Currencies */}
 						<div className={styles.details_panel_row} tabIndex="0">
 							<div className={styles.details_panel_label}>Currencies</div>
 							<div className={styles.details_panel_value}>
 								{"currencies" in country ? Object?.values(country.currencies)[0]["name"] : "undefined"}
 							</div>
 						</div>
-
+						{/* Gini */}
 						{country.gini && (
 							<div className={styles.details_panel_row} tabIndex="0">
 								<div className={styles.details_panel_label}>Gini</div>
@@ -107,10 +108,10 @@ const Country = ({ country }) => {
 								</div>
 							</div>
 						)}
-
+						{/* Border Countries */}
 						{country.borders && country.borders.length && (
 							<div className={styles.details_panel_borders}>
-								<div className={styles.details_panel_borders_label}>Neighbouring countries</div>
+								<div className={styles.details_panel_borders_label}>Bordering Countries</div>
 
 								<div className={styles.details_panel_borders_container}>
 									{borders.map(({ flags, name, cca3 }) => (

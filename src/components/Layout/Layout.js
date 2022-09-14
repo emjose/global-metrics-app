@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import FlareRoundedIcon from "@material-ui/icons/FlareRounded";
 import { Github } from "../github";
 import Image from "next/image";
+import { Tooltip } from "@nextui-org/react";
 
 const Layout = ({ children, title = "Global Metrics" }) => {
 	const [theme, setTheme] = useState("light");
@@ -58,27 +59,31 @@ const Layout = ({ children, title = "Global Metrics" }) => {
 			<header className={styles.header}>
 				<div>
 					<div className={styles.buttoncontainer}>
-						<button
-							className={styles.themeSwitcher}
-							onClick={switchTheme}
-							tabIndex="0"
-							aria-label="switch to light or dark mode"
-							style={{ cursor: "pointer" }}
-						>
-							<FlareRoundedIcon style={{ fontSize: 30 }} alt="switch to light or dark mode" />
-						</button>
+						<Tooltip content={"Switch Theme"} color="error" placement="bottom" hideArrow>
+							<button
+								className={styles.themeSwitcher}
+								onClick={switchTheme}
+								tabIndex="0"
+								aria-label="switch to light or dark mode"
+								style={{ cursor: "pointer" }}
+							>
+								<FlareRoundedIcon style={{ fontSize: 30 }} alt="switch to light or dark mode" />
+							</button>
+						</Tooltip>
 					</div>
 
 					<Link href="/">
-						<a title="Back to home page" id="home-page-logo">
-							<Image
-								className={styles.logo}
-								src="/gm-logo.png"
-								alt="Global Metrics"
-								width={1218}
-								height={122}
-								layout="intrinsic"
-							/>
+						<a id="home-page-logo">
+							<Tooltip content={"Click logo for home page"} color="error" placement="bottom">
+								<Image
+									className={styles.logo}
+									src="/gm-logo.png"
+									alt="Global Metrics"
+									width={1218}
+									height={122}
+									layout="intrinsic"
+								/>
+							</Tooltip>
 						</a>
 					</Link>
 				</div>

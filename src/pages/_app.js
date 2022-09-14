@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import { useEffect } from "react";
+import { NextUIProvider } from "@nextui-org/react";
 
 function MyApp({ Component, pageProps }) {
 	useEffect(() => {
@@ -47,7 +48,11 @@ function MyApp({ Component, pageProps }) {
 		console.log("%cHave a wonderful day!", styles2);
 	}, []);
 
-	return <Component {...pageProps} />;
+	return (
+		<NextUIProvider>
+			<Component {...pageProps} />
+		</NextUIProvider>
+	);
 }
 
 export default MyApp;
