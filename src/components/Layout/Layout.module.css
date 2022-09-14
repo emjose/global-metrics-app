@@ -35,11 +35,13 @@
 	cursor: pointer;
 	outline: var(--outline-color);
 	outline-offset: 8px;
+	border-radius: 2px;
 }
 
 .header a:focus {
 	outline: var(--outline-color);
 	outline-offset: 16px;
+	border-radius: 2px;
 }
 
 .footer {

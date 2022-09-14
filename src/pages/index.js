@@ -11,19 +11,10 @@ export default function Home({ countries }) {
 
 	const filteredCountries = countries.filter(
 		(country) =>
-			// country.name.toString().toLowerCase().includes(keyword) || country.region.toLowerCase().includes(keyword)
-
 			(country.name.common && country.name.common.toLowerCase().includes(keyword)) ||
 			(country.region && country.region.toLowerCase().includes(keyword)) ||
 			(country.subregion && country.subregion.toLowerCase().includes(keyword))
 	);
-
-	// const filteredCountries = countries.filter(
-	// 	(country) =>
-	// 		country.name.toString().toLowerCase().includes(keyword) ||
-	// 		country.region.toLowerCase().includes(keyword) ||
-	// 		country.subregion.toLowerCase().includes(keyword)
-	// );
 
 	const onInputChange = (e) => {
 		e.preventDefault();
@@ -68,18 +59,6 @@ export default function Home({ countries }) {
 	);
 }
 
-// export const getStaticProps = async () => {
-// 	const res = await fetch("https://restcountries.com/v2/all");
-// 	const countries = await res.json();
-
-// 	return {
-// 		props: {
-// 			countries,
-// 		},
-// 	};
-// };
-
-// Implement v3.1 in near future, investigate proper gini syntax.
 export const getStaticProps = async () => {
 	const res = await fetch("https://restcountries.com/v3.1/all");
 	const countries = await res.json();
@@ -92,7 +71,7 @@ export const getStaticProps = async () => {
 	};
 };
 
-// Old API: https://restcountries.eu/
-// New API: https://restcountries.com/
+// First API: https://restcountries.eu/
+// Second API: https://restcountries.com/v2/all
 
 // Emmanuel Jose logo, Global Metrics logo, and favicon. © Emmanuel Jose. All Rights Reserved.

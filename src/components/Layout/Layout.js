@@ -33,6 +33,25 @@ const Layout = ({ children, title = "Global Metrics" }) => {
 		<div className={styles.container}>
 			<Head>
 				<title>{title}</title>
+				<meta charSet="UTF-8" />
+				<meta property="og:title" content="Global Metrics" />
+				<meta property="og:image" content="https://global-metrics-app.vercel.app/meta-029-global-3.png" />
+				<meta
+					property="og:image:alt"
+					content="A diagram table of 250 countries and territories. Click to visit website."
+				/>
+				<meta property="og:description" content="Project by Emmanuel Jose" />
+				<meta property="og:url" content="https://global-metrics-app.vercel.app/" />
+				<meta property="og:type" content="website" />
+				<meta name="twitter:card" content="summary" />
+				<meta
+					name="description"
+					content="An app about 250 countries and territories. Click to visit website."
+				/>
+				<meta name="theme-color" content="#fff9f9" />
+				<meta name="keywords" content="HTML, CSS, JavaScript, React, Next.js, countries, global, API" />
+				<meta name="author" content="Emmanuel Jose" />
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
@@ -51,7 +70,7 @@ const Layout = ({ children, title = "Global Metrics" }) => {
 					</div>
 
 					<Link href="/">
-						<a>
+						<a title="Back to home page" id="home-page-logo">
 							<Image
 								className={styles.logo}
 								src="/gm-logo.png"

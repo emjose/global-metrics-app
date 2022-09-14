@@ -100,20 +100,25 @@
 .details_panel_row_capital:hover .details_panel_label_capital,
 .details_panel_row_capital:focus .details_panel_label_capital,
 .details_panel_row:hover .details_panel_label,
-.details_panel_row:focus .details_panel_label,
-.details_panel_borders:focus .details_panel_borders_label,
-.details_panel_borders:hover .details_panel_borders_label {
+.details_panel_row:focus .details_panel_label {
 	color: var(--hover-font-color);
 }
 
-.details_panel_borders:focus,
+.details_panel_borders:focus .details_panel_borders_label,
+.details_panel_borders:hover .details_panel_borders_label,
+.details_panel_borders:focus .details_panel_borders_name,
+.details_panel_borders:hover .details_panel_borders_name {
+	color: var(--country-color);
+}
+
+/* .details_panel_borders:focus,
 .details_panel_borders:hover {
 	outline: none;
 	background: #fff1c5;
 	background: linear-gradient(322deg, #fae6a5 0%, #ffcac4 48%, #ffb3c8 100%);
 	border-bottom-left-radius: 8px;
 	border-bottom-right-radius: 8px;
-}
+} */
 
 .details_panel_row_capital:focus,
 .details_panel_row_capital:hover {
@@ -151,6 +156,10 @@
 	gap: 24px;
 }
 
+.details_panel_borders:focus-within {
+	background-color: var(--row-background);
+}
+
 .details_panel_borders img {
 	width: 100%;
 	border-radius: 4px;
@@ -158,6 +167,29 @@
 
 .details_panel_borders_country {
 	text-align: center;
+}
+
+.details_panel_borders_country img {
+	box-shadow: 2px 2px 2px black;
+	box-shadow: var(--flag-shadow);
+}
+
+/* 
+Like Crypto-Tracker, global focus outline was disabled. 
+For custom focus to work, the focus pseudo class must be first, then the selector. 
+*/
+
+:focus .details_panel_borders_country,
+.details_panel_borders_country:hover {
+	outline: var(--flag-outline);
+	border-radius: 4px;
+	outline-offset: 4px;
+	background-color: var(--row-background);
+}
+
+.details_panel_borders_country:hover img {
+	box-shadow: 2px 2px 2px black;
+	box-shadow: var(--flag-shadow-hover);
 }
 
 .details_panel_borders_label {
@@ -171,6 +203,7 @@
 	color: var(--country-color);
 	letter-spacing: var(--letter-spacing);
 	font-weight: 300;
+	font-size: 18px;
 }
 
 .container {

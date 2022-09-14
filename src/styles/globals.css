@@ -10,13 +10,15 @@
 	--search-bar-color: #f3ecf0d7;
 	--row-background: white;
 	--font-family: neue-haas-unica, sans-serif;
+	--default-font: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+		Droid Sans, Helvetica Neue, sans-serif;
 	--box-shadow: 2px 2px 8px 2px rgba(219, 208, 214, 0.322);
 	--letter-spacing: 0.5px;
 	--header-color: #f2166ae5;
 	--header-focus: #ffb3c962;
 	--header-focus-outline: 2px solid #fa8baaa8;
 	--header-hover: #ffb3c93b;
-	--outline-color: 2px solid #f71c70af;
+	--outline-color: 3px solid #f71c70af;
 	--row-border: 0.25px solid #eee4e9d7;
 	--country-color: #3d3d3d;
 	--pag-color: rgb(107, 107, 107);
@@ -36,6 +38,9 @@
 	--footer-focus-color: black;
 	--github-fill: #ffac9e;
 	--github-focus: var(--header-color);
+	--flag-shadow: rgba(99, 99, 99, 0.891) 0px 2px 8px 0px;
+	--flag-shadow-hover: rgba(99, 99, 99, 0.447) 0px 2px 8px 0px;
+	--flag-outline: 3px solid black;
 }
 
 [data-theme="dark"] {
@@ -46,7 +51,7 @@
 	--background-color: #19142c;
 	--search-bar-color: #342a42;
 	--row-background: #352b42;
-	--outline-color: 2px solid #fc7e18d7;
+	--outline-color: 3px solid #fc7e18d7;
 	--search-border: 0.1px solid #3b3344;
 	--header-focus: #fd7a2ee8;
 	--header-hover: #4c415c;
@@ -70,14 +75,16 @@
 	--footer-color: #d199e2d7;
 	--hover-font-color: rgb(143, 45, 156);
 	--footer-focus-color: white;
+	--flag-shadow: rgba(99, 99, 99, 0) 0px 2px 8px 0px;
+	--flag-shadow-hover: none;
+	--flag-outline: 3px solid white;
 }
 
 html,
 body {
 	padding: 0;
 	margin: 0;
-	/* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+
 	font-family: var(--font-family);
 	background-color: var(--background-color);
 	color: var(--text-color);
@@ -100,6 +107,10 @@ a {
 
 .logo {
 	width: 1000px;
+}
+
+:focus {
+	outline: none;
 }
 
 /* font-family: ff-scala-sans-pro, sans-serif;
