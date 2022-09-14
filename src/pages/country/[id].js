@@ -1,12 +1,12 @@
+/* eslint-disable react/no-unknown-property */
 import { useState, useEffect } from "react";
 import Layout from "../../components/Layout/Layout";
 import styles from "./Country.module.css";
 import Head from "next/head";
 
 const getCountry = async (id) => {
-	const res = await fetch(`https://restcountries.com/v3.1/alpha/${id}`);
+	const res = await fetch(`https://restcountries.com/v3.1/alpha?codes=${id}`);
 	const country = await res.json();
-
 	return country;
 };
 
@@ -22,6 +22,7 @@ const Country = ({ country }) => {
 
 	useEffect(() => {
 		getBorders();
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	return (
@@ -49,13 +50,13 @@ const Country = ({ country }) => {
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<Layout title={country.name}>
+			<Layout title={country.name.common}>
 				<div className={styles.container}>
 					<div className={styles.container_left}>
 						<div className={styles.overview_panel} tabIndex="0">
-							<img src={country.flag} alt={country.name}></img>
+							<img src={country.flags.png} alt={country.name.common} />
 
-							<h1 className={styles.overview_name}>{country.name}</h1>
+							<h1 className={styles.overview_name}>{country.name.common}</h1>
 							<div className={styles.overview_region}>{country.region}</div>
 
 							<div className={styles.overview_numbers}>
@@ -80,43 +81,66 @@ const Country = ({ country }) => {
 								<div className={styles.details_panel_value_capital}>{country.capital}</div>
 							</div>
 
-							<div className={styles.details_panel_row} tabIndex="0">
-								<div className={styles.details_panel_label}>Languages</div>
-								<div className={styles.details_panel_value}>
-									{country.languages ? country.languages.map(({ name }) => name).join(", ") : ""}
+							{country.languages && (
+								<div className={styles.details_panel_row} tabIndex="0">
+									<div className={styles.details_panel_label}>Languages</div>
+									<div className={styles.details_panel_value}>
+										{Object.values(country.languages).join(", ")}
+									</div>
 								</div>
-							</div>
+							)}
 
-							<div className={styles.details_panel_row} tabIndex="0">
-								<div className={styles.details_panel_label}>Currencies</div>
-								<div className={styles.details_panel_value}>
-									{country.currencies ? country.currencies.map(({ name }) => name).join(", ") : ""}
+							{country.currencies && (
+								<div className={styles.details_panel_row} tabIndex="0">
+									<div className={styles.details_panel_label}>Currencies</div>
+									<div className={styles.details_panel_value}>
+										{Object.values(country.currencies)
+											.flatMap((cur) => cur["name"])
+											.toString()
+											.replace(",", ", ")}
+									</div>
 								</div>
-							</div>
+							)}
 
-							{/* <div className={styles.details_panel_row} tabIndex="0">
-								<div className={styles.details_panel_label}>Native name</div>
-								<div className={styles.details_panel_value}>{country.nativeName}</div>
-							</div> */}
-
-							{/* <div className={styles.details_panel_row} tabIndex="0">
-								<div className={styles.details_panel_label}>Gini</div>
-								<div className={styles.details_panel_value}>{country.gini} %</div>
-							</div> */}
-
-							<div className={styles.details_panel_borders} tabIndex="0">
-								<div className={styles.details_panel_borders_label}>Bordering Countries</div>
-
-								<div className={styles.details_panel_borders_container}>
-									{borders.map(({ flag, name }) => (
-										<div className={styles.details_panel_borders_country} key={name}>
-											<img src={flag} alt={name}></img>
-
-											<div className={styles.details_panel_borders_name}>{name}</div>
-										</div>
-									))}
+							{country.name.nativeName && (
+								<div className={styles.details_panel_row} tabIndex="0">
+									<div className={styles.details_panel_label}>Native Names</div>
+									<div className={styles.details_panel_value}>
+										{Object.values(country.name.nativeName)
+											.flatMap((cur) => cur["official"])
+											.toString()
+											.replace(",", ", ")}
+									</div>
 								</div>
-							</div>
+							)}
+
+							{country.gini && (
+								<div className={styles.details_panel_row} tabIndex="0">
+									<div className={styles.details_panel_label}>Gini</div>
+									<div className={styles.details_panel_value}>
+										{country.gini &&
+											Object.values(country.gini).flatMap((cur) => {
+												return cur.toString() + "%";
+											})}
+									</div>
+								</div>
+							)}
+
+							{borders.length > 0 && (
+								<div className={styles.details_panel_borders} tabIndex="0">
+									<div className={styles.details_panel_borders_label}>Bordering Countries</div>
+									<div className={styles.details_panel_borders_container}>
+										{borders.map((border, index) => (
+											<div className={styles.details_panel_borders_country} key={index}>
+												<img src={border[0].flags.png} alt={border[0].name.common} />
+												<div className={styles.details_panel_borders_name}>
+													{border[0].name.common}
+												</div>
+											</div>
+										))}
+									</div>
+								</div>
+							)}
 						</div>
 					</div>
 				</div>
@@ -127,26 +151,36 @@ const Country = ({ country }) => {
 
 export default Country;
 
-export const getStaticPaths = async () => {
-	const res = await fetch("https://restcountries.com/v3.1/all");
-	const countries = await res.json();
+// export const getStaticPaths = async () => {
+// 	const res = await fetch("https://restcountries.com/v3.1/all");
+// 	const countries = await res.json();
 
-	const paths = countries.map((country) => ({
-		params: { id: country.cca3 },
-	}));
+// 	const paths = countries.map((country) => ({
+// 		params: { id: country.cca3 },
+// 	}));
 
-	return {
-		paths,
-		fallback: false,
-	};
-};
+// 	return {
+// 		paths,
+// 		fallback: false,
+// 	};
+// };
 
-export const getStaticProps = async ({ params }) => {
+// export const getStaticProps = async ({ params }) => {
+// 	const country = await getCountry(params.id);
+
+// 	return {
+// 		props: {
+// 			country,
+// 		},
+// 	};
+// };
+
+export const getServerSideProps = async ({ params }) => {
 	const country = await getCountry(params.id);
 
 	return {
 		props: {
-			country,
+			country: country[0],
 		},
 	};
 };

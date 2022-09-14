@@ -58,6 +58,7 @@ const Layout = ({ children, title = "Global Metrics" }) => {
 								alt="Global Metrics"
 								width={1218}
 								height={122}
+								layout="intrinsic"
 							/>
 						</a>
 					</Link>
