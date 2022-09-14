@@ -232,4 +232,9 @@
 	.name {
 		font-weight: 400;
 	}
+
+	.heading_name,
+	.heading_population {
+		color: var(--input-color);
+	}
 }
