@@ -11,10 +11,9 @@ export default function Home({ countries }) {
 
 	const filteredCountries = countries.filter(
 		(country) =>
-			// (country.name.common && country.name.common.toLowerCase().includes(keyword)) ||
-			// (country.region && country.region.toLowerCase().includes(keyword)) ||
-			// (country.subregion && country.subregion.toLowerCase().includes(keyword))
-			country.name.common.toLowerCase().includes(keyword) || country.region.toLowerCase().includes(keyword)
+			(country.name.common && country.name.common.toLowerCase().includes(keyword)) ||
+			(country.region && country.region.toLowerCase().includes(keyword)) ||
+			(country.subregion && country.subregion.toLowerCase().includes(keyword))
 	);
 
 	const onInputChange = (e) => {
