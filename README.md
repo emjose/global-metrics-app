@@ -91,7 +91,7 @@ yarn dev
 
 • Countries can be sorted by name, population, area, and <a href="https://www.investopedia.com/terms/g/gini-index.asp">Gini Index</a>.
 
-• **Note**: Sorting by Gini Index is currently incorrect and will be improved upon.
+• **Note**: Sorting is currently incorrect and will be improved upon.
 
 #
 
